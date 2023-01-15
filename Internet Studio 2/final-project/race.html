@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D&D Start-up Guide</title>
+    <link href="final.css?version=100" rel=stylesheet type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" name="author" content="Will Meagher">
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="logo">
+          <img src="d&d_logo.png" alt="D&D Start-up Guide Logo">
+          <div>Start-up Guide</div>
+        </div>
+        <div class="navbar">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="stats.html">Base Stats</a></div>
+          <div><a href="ability.html">Abilities</a></div>
+          <div><a href="sThrows.html">Saving Throws</a></div>
+          <div><a href="proficiency.html">Proficiency</a></div>
+          <div><a href="race.html">Races</a></div>
+          <div><a href="class.html">Classes</a></div>
+          <div><a href="spells.html">Spellcasting</a></div>
+          <div><a href="condition.html">Conditions</a></div>
+          <div><a href="homebrew.html">Homebrew</a></div>
+        </div>
+       </div>
+      <div class="mainImg">
+        <img src="race.jpg" alt="A Lizardfolk Playing The Lute">
+      </div>
+      <div class="pageName">
+        <h1>Races</h1>
+      </div>
+      <div class="general">
+        <h3 class="section">Races and Their Importance</h3>
+        <p class="description">
+          Each race in the game is rather important when it comes to class choice. Each race has their own special aspects, shaped around
+          what they are. Many races are better at one class than others are. Now before we continue this, I have to define another rule of
+          the game. So some races get something called features or feats for short. These feats can also be gained by leveling up your class
+          as well. These feats will usually enhance a modifier, give an extra proficiency, or give the player an extra action, bonus action,
+          or reaction. If you want to dive deeper into feats click this link here (<a href="https://www.aidedd.org/dnd-filters/feats.php">
+		  all feats available</a>). Furthermore, for more information on actions go to the Classes tab. This makes choosing a race very important. It won't 
+		  only be
+          what you'll look like, but how you will play like as well. In this section I will be going over all racial aspects. This includes
+          all racial atributes, physical characteristics, and what classes benefit from these aspects. However, I will only be going over
+          the races in the players handbook. This is because these races you will guarenteed play, races from any other source book are up
+          to your DM's discretion. If you want to go further down the rabit hole of the playable D&D races, click this link (
+          <a href="https://www.dndbeyond.com/races">all playable races</a>) in order to peruse the massive database.
+        </p>
+      </div>
+      <div class="interactive">
+        <div class=statType>
+          <label for="racePicker">Race:</label>
+          <select id="racePicker" name="racePicker" onchange="rDetailGenerator();">
+            <option value="">-- pick one --</option>
+            <option value="dragonborn">Dragonborn</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="elf">Elf</option>
+            <option value="gnome">Gnome</option>
+            <option value="half-elf">Half-elf</option>
+            <option value="halfling">Halfling</option>
+            <option value="half-orc">Half-orc</option>
+            <option value="human">Human</option>
+            <option value="tiefling">Tiefling</option>
+          </select>
+        </div>
+      </div>
+      <div class="site_info">
+        <h3 id="raceChoosen" class="section">&nbsp;</h3>
+        <p id="raceDetails" class="description">&nbsp;</p>
+      </div>
+      <div class="contact_info">
+        <div>Author: Will Meagher</div>
+        <div>Image Referances:</div>
+        <ul>
+          <li><a href="https://www.lifepng.com/photo/3268/smoke-png-hd-5/">Logo Image</a></li>
+          <li><a href="https://packagingeurope.com/ampacet-reveals-halogen-free-flame-retardant-masterbatches/4317.article">Background Image</a></li>
+          <li><a href="https://www.dmsguild.com/product/346571/A5-Character-Sheet-DD-5e?filters=0_45507_0_0_0_0_0_0">Stats Image</a></li>
+          <li><a href="https://www.redbubble.com/i/ipad-case/OH-NO-D20-Nat-1-uncolored-version-by-AceLlama/51349160.MNKGF">Abilities Image</a></li>
+          <li><a href="https://www.savingthrowshow.com/shows/">Saving Throws Image</a></li>
+          <li><a href="https://www.istockphoto.com/illustrations/silver-knight-armor">Proficiency Image</a></li>
+          <li><a href="https://www.polygon.com/22889546/dnd-monsters-of-the-multiverse-pc-races-full-list">Races Image</a></li>
+          <li><a href="https://www.redbubble.com/i/postcard/Kawaii-DnD-Classes-DnD-Dungeons-and-Dragons-DandD-by-Glassstaff/40922025.V7PMD">Classes Image</a></li>
+          <li><a href="https://www.gamersdecide.com/articles/dnd-best-bonus-action-spells">Spell Image</a></li>
+          <li><a href="https://arcaneeye.com/mechanic-overview/5e-conditions/">Conditions Image</a></li>
+          <li><a href="https://cdn.discordapp.com/attachments/888124158905548912/971264206487842836/orb.png">Homebrew Image</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>

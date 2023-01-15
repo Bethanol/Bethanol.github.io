@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Assesment</title>
+    <link href="final.css?version=100" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Manrope:wght@200&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" name="author" content="Will Meagher">
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">👕 Pokemon Team Shirts Order Form 👚</div>
+      <div id="tshirts">
+        <div class="teamShirt" id="mystic">
+          <img class="teamPicture" src="https://atec.utdallas.app/~netid/shirts/mystic.jpg" alt="blue articuno team mystic tshirt">
+          <div class="choice">
+            <input class ="option" type="checkbox" name="mystic">
+            <label for="mystic">Team Mystic</label>
+          </div>
+        </div>
+        <div class="teamShirt" id="instinct">
+          <img class="teamPicture" src="https://atec.utdallas.app/~netid/shirts/instinct.jpg" alt="yellow zaptos team instinct tshirt">
+          <div class="choice">
+            <input class ="option" type="checkbox" name="instinct">
+            <label for="instinct">Team Instinct</label>
+          </div>
+        </div>
+        <div class="teamShirt" id="valor">
+          <img class="teamPicture" src="https://atec.utdallas.app/~netid/shirts/valor.jpg" alt="red moltres team valor tshirt">
+          <div class="choice">
+            <input class ="option" type="checkbox" name="valor">
+            <label for="valor">Team Valor</label>
+          </div>
+        </div>
+      </div>
+      <div id="info">
+        <table>
+          <tr>
+            <th>Size</th>
+            <th>Color</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>Small</td>
+            <td>-</td>
+            <td><input class="quantity" id="small" type="number"></td>
+            <td class="price">$20</td>
+            <td>$0</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>-</td>
+            <td><input class="quantity" id="medium" type="number"></td>
+            <td class="price">$22</td>
+            <td>$0</td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td>-</td>
+            <td><input class="quantity" id="large" type="number"></td>
+            <td class="price">$24</td>
+            <td>$0</td>
+          </tr>
+          <tr id="total">
+            <td>Order Total</td>
+            <td>&nbsp;</td>
+            <td id="quantTotal">0</td>
+            <td>&nbsp;</td>
+            <td id="overallTotal">$0</td>
+          </tr>
+        </table>
+      </div>
+      <div id="email">
+        <div>
+          <input class="placeOrder">
+        </div>
+        <div>
+          <button class="placeOrder">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>

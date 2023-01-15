@@ -1,0 +1,20 @@
+body{
+  background-color: gray;
+}
+#ball{
+  font-size: 60px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+#court{
+  width: 700px;
+  height: 500px;
+  background-color: green;
+}
+.point{
+  font-size: 60px;
+}
+#switch{
+  font-size: 60px;
+}

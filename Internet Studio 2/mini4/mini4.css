@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  background-color: black;
+}
+.page{
+  color: white;
+  min-width: 0.1em;
+}
+#header{
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue', cursive;
+}
+.game{
+  width: 40%;
+  margin: 0 auto;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  background-image: linear-gradient(grey, red);
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

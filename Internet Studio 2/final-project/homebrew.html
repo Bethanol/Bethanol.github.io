@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D&D Start-up Guide</title>
+    <link href="final.css?version=100" rel=stylesheet type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" name="author" content="Will Meagher">
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="logo">
+          <img src="d&d_logo.png" alt="D&D Start-up Guide Logo">
+          <div>Start-up Guide</div>
+        </div>
+        <div class="navbar">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="stats.html">Base Stats</a></div>
+          <div><a href="ability.html">Abilities</a></div>
+          <div><a href="sThrows.html">Saving Throws</a></div>
+          <div><a href="proficiency.html">Proficiency</a></div>
+          <div><a href="race.html">Races</a></div>
+          <div><a href="class.html">Classes</a></div>
+          <div><a href="spells.html">Spellcasting</a></div>
+          <div><a href="condition.html">Conditions</a></div>
+          <div><a href="homebrew.html">Homebrew</a></div>
+        </div>
+       </div>
+      <div class="mainImg">
+        <img src="orb.png" alt="Orb With Many Runes on it">
+      </div>
+      <div class="pageName">
+        <h1>Homebrew</h1>
+      </div>
+      <div class="general">
+        <h3 class="section">D&D as a Whole</h3>
+        <p class="description">
+          Now what I think is the greatest thing about D&D is that no one plays it the same way. That's right some of these rules that I took
+          so long to disscuss might not even be used. But that's up to your dm. Your dm makes the game, the experiance, the characters, and the
+          world. Now because this is a factor I can't teach you everything there is to know about D&D. So instead I will teach my experiances
+          with these homebrew rules that I have encountered.
+        </p>
+      </div>
+      <div class="site_info">
+        <h3 class="section">Base Stat Rolling</h3>
+        <p class="description">
+          Now as I have explained how the base stats, abilities, and saving throws all worked with each other, but how do we get those numbers
+          in the first place. There are a few ways to get these stats however the one that I have experianced the most is rolling for stats.
+          The way this works is that you use 4d6's and roll them all at the same time. Then you take the lowest number out and then add the
+          other 3 rolls together as shown below. However I have had many dms that don't like to leave it too much to chance. I've had a dm who
+          always replaced your 2nd lowest stat with an 18, a dm who said I could re-roll if I got below a 10, and even had a dm that alowed me
+          to re-roll 1s that I got on the d6's.
+        </p>
+        <h3 class="section">Overpowered Class Aspects</h3>
+        <p class="description">
+          Another thing great dms do is game balance. Now the game itself is already pretty balanced, Wizards of The Coast made well sure of that.
+          But sometimes the rules can be too vague. If a player is abusing something that really shouldn't be abused, then of course you need to 
+		  balance the
+          game. For example, one of the things that I ran into was an exploit. I was playing a rogue and a rogue has something called flanking.
+          What the rules said was basically if an ally was within 5 feet of me and attacking the same enemy then I could proc sneak attack. I won't
+          lie I abused this fact. Until finaly the dm had to put his foot down and banned flanking from our campaign. And now I have never had a dm
+          since then that allowed flanking.
+        </p>
+        <h3 class="section">Homebrew Classes</h3>
+        <p class="description">
+          Homebrew can be one of the best things in the world. Especially if you colaborate your plans with your dm. Many dms love making homebrew
+          items, weapons, races, and classes. Even I did this once. My group and I were all prepping for a D&D one-shot in our dm's universe. I was
+          under the impression that this one-shot was going to be absolute bat shit insane. So I decided to go bat shit on my character creation. Now
+          I won't lie I have no idea how I got my dm to agree this, but he and I collaborated together to make, and I shit you not, a piss gun. It was
+          fully operational with napalm, sleep, and berserk rounds. Colaborate with your dms, you might be suprised.
+        </p>
+        <h3 class="section">Homebrew Worlds</h3>
+        <p class="description">
+          When I first started D&D with my friends we were just playing one of the easiest modules to begin with. But after that, we immeadiatly jumped
+          into homebrew. Ever since then my friends and I have prospered in the many worlds my dms have thrown us in. The fights, the roleplay, the fun
+          it is so undeniably intoxicating. These worlds that your dms build for fun, it's not for nothing.
+        </p>
+        <h3 class="section">Make Your Own Rules</h3>
+        <p class="description">
+          Since D&D is such a relative game with all its homebrew aspects, I figured why not try to make you own homebrew rules. Just fill out the boxes
+          below press the button and watch it be added to the section.
+        </p>
+        <div class="interactive">
+          <div class=statType>
+            <label for="user_title">Section:</label>
+            <input id="user_title" name="stat_type">
+          </div>
+          <div class="modChange">
+            <label for="user_rule">Paragraph:</label>
+            <textarea id="user_rule" name="stat_num" type="text"></textarea>
+          </div>
+          <button onclick="addRule();">Add</button>
+        </div>
+        <h3 id="userHeader" class="section">&nbsp;</h3>
+        <p id="userDetail" class="description">
+          &nbsp;
+        </p>
+      <div class="contact_info">
+        <div>Author: Will Meagher</div>
+        <div>Image Referances:</div>
+        <ul>
+          <li><a href="https://www.lifepng.com/photo/3268/smoke-png-hd-5/">Logo Image</a></li>
+          <li><a href="https://packagingeurope.com/ampacet-reveals-halogen-free-flame-retardant-masterbatches/4317.article">Background Image</a></li>
+          <li><a href="https://www.dmsguild.com/product/346571/A5-Character-Sheet-DD-5e?filters=0_45507_0_0_0_0_0_0">Stats Image</a></li>
+          <li><a href="https://www.redbubble.com/i/ipad-case/OH-NO-D20-Nat-1-uncolored-version-by-AceLlama/51349160.MNKGF">Abilities Image</a></li>
+          <li><a href="https://www.savingthrowshow.com/shows/">Saving Throws Image</a></li>
+          <li><a href="https://www.istockphoto.com/illustrations/silver-knight-armor">Proficiency Image</a></li>
+          <li><a href="https://www.polygon.com/22889546/dnd-monsters-of-the-multiverse-pc-races-full-list">Races Image</a></li>
+          <li><a href="https://www.redbubble.com/i/postcard/Kawaii-DnD-Classes-DnD-Dungeons-and-Dragons-DandD-by-Glassstaff/40922025.V7PMD">Classes Image</a></li>
+          <li><a href="https://www.gamersdecide.com/articles/dnd-best-bonus-action-spells">Spell Image</a></li>
+          <li><a href="https://arcaneeye.com/mechanic-overview/5e-conditions/">Conditions Image</a></li>
+          <li><a href="https://cdn.discordapp.com/attachments/888124158905548912/971264206487842836/orb.png">Homebrew Image</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>

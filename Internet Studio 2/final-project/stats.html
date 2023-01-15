@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D&D Start-up Guide</title>
+    <link href="final.css?version=100" rel=stylesheet type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" name="author" content="Will Meagher">
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="logo">
+          <img src="d&d_logo.png" alt="D&D Start-up Guide Logo">
+          <div>Start-up Guide</div>
+        </div>
+        <div class="navbar">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="stats.html">Base Stats</a></div>
+          <div><a href="ability.html">Abilities</a></div>
+          <div><a href="sThrows.html">Saving Throws</a></div>
+          <div><a href="proficiency.html">Proficiency</a></div>
+          <div><a href="race.html">Races</a></div>
+          <div><a href="class.html">Classes</a></div>
+          <div><a href="spells.html">Spellcasting</a></div>
+          <div><a href="condition.html">Conditions</a></div>
+          <div><a href="homebrew.html">Homebrew</a></div>
+        </div>
+       </div>
+      <div class="mainImg">
+        <img src="statBlock.jpg" alt="dexterity stat block">
+      </div>
+      <div class="pageName">
+        <h1>Base Stats</h1>
+      </div>
+      <div class="general">
+        <h3 class="section">The Basics</h3>
+        <p class="description">
+          Before we can get to stats there are a few ground rules that we need to go over first. The first thing we need to go over is
+          who and what the dungeon master, or DM for short, does. The DM is essencially the game master. They control the world around
+          you. They control things like npcs, enemies, allies, and the setting around you. Their role is to set up and immerce you into the game.
+          They also control how well your character does at something. This is done by stat, ability, and saving throw rolls. All of 
+          these rolls are rolled with a 20 sided dice (d20). The higher rolls you get on this dice the more likely you are to succeed 
+          at what you try. Whenever you do roll some of these things you will usually get a modifier which is based on which stat you
+          are rolling. This is explained in further detail bellow.
+        </p>
+        <h3 class="section">The 6 Main Stats</h3>
+        <p class="description">
+          These stats make up the backbone of character creation. These 6 basic stats are as follows: Strength (Str), Dexterity (Dex),
+          Constitution (Con), Intelligence (Int), Wisdom (Wis), and Charisma (Cha). Each one of them represents and affects their own
+          seperate things. In this section we will be focusing on what they do and their modifiers.
+        </p>
+      </div>
+      <div class="site_info">
+        <h3 class="section">Stat Modifiers</h3>
+        <p class="description">
+          As said before, modifiers are numbers that can change your roll. When you roll for certain stats or abilities you will use these
+          certain modifiers. For example, if the dm asks me to roll a Str check, I will roll and add my Str modifier to the roll. These
+          modifiers are determined by the number you put into your stat. Now these numbers have restrictions. Your stats cannot go below 1
+          or above 20. If one of your stats reach 0, you die. For every even number your modifier will increase by one. Refer to the table and example to get a better understanding.
+        </p>
+        <div class="tables">
+          <table>
+            <tr>
+              <th>Stat Number</th>
+              <th>Modifier Number</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>-5</td>
+            </tr>
+            <tr>
+              <td>2-3</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>4-5</td>
+              <td>-3</td>
+            </tr>
+            <tr>
+              <td>6-7</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>8-9</td>
+              <td>-1</td>
+            </tr>
+            <tr>
+              <td>10-11</td>
+              <td>+0</td>
+            </tr>
+            <tr>
+              <td>12-13</td>
+              <td>+1</td>
+            </tr>
+            <tr>
+              <td>14-15</td>
+              <td>+2</td>
+            </tr>
+            <tr>
+              <td>16-17</td>
+              <td>+3</td>
+            </tr>
+            <tr>
+              <td>18-19</td>
+              <td>+4</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>+5</td>
+            </tr>
+          </table>
+        </div>
+        <div class="interactive">
+          <div class=statType>
+            <label for="stat_type">Stat:</label>
+            <select id="stat_type" name="stat_type">
+              <option value="">-- pick one --</option>
+              <option value="str">Str</option>
+              <option value="dex">Dex</option>
+              <option value="con">Con</option>
+              <option value="int">Int</option>
+              <option value="wis">Wis</option>
+              <option value="cha">Cha</option>
+            </select>
+          </div>
+          <div class="statNum">
+            <label for="stat_num">Number:</label>
+            <input id="stat_num" name="stat_num" type="number" min="1" max="20" onchange="modMaker();">
+          </div>
+          <div class="modChange">
+            Modifier: <span id="modifier">&nbsp;</span>
+          </div>
+        </div>
+        <h3 class="section">Strength (Str)</h3>
+        <p class="description">
+          Str is a pretty straight forward stat. This pertains to how strong a character is. It is mainly effects carrying capacity, attack
+          rolls for Str based weapons, and feats of strength. For example, if you wanted to throw something extremely heavy, say like a
+          boulder, at an enemy you would first have to roll a strength check to see if you can pick the item up and then roll again to see if you
+          can successfully throw it. Now your carrying capacity will be whatever your Str score is, multiplied by 15. So you'll at least
+          be able to have a 15lb. carrying capacity.
+        </p>
+        <div class="interactive">
+          <label for="carry">Str Score:</label>
+          <input id="carry" name="carry" type="number" min="1" max="20" onchange="carryEquation();">
+          <div>
+            Carrying Capacity: <span id="carryCap">&nbsp;</span>
+          </div>
+        </div>
+        <h3 class="section">Dexterity (Dex)</h3>
+        <p class="description">
+          Dex pertains to how nimble and flexable your character is. This stat influences your armor class, or AC for short, attack rolls with Dex based
+          weapons, how acrobatic you are, and initiative. Now before we continue AC is a number that determines what rolls can and can't hit you. Now just
+          like everything else attack rolls are made with a d20. You will also get modifiers on your attack rolls that are based on what weapon you are
+          using. The weapon you choose to attack with will determine what stat you will roll to hit with it as well as if you get you get your proficiency
+          modifier added to it, more on that later. Anyway, when an attack roll gets rolled against you your AC defines the lowest number needed on the roll
+          to hit you. So for example, if your AC is a 13 than an enemy needs a 13 or above on an attack roll to hit you. Now when it comes to calculating AC it 
+          will normally depend on what armor you wear. Below is a table that shows all the different types of armor and how they're used to calculate AC. If
+          you are not wearing armor, AC will usually be calculated by just adding 10 to your Dex modifier. For the unusual circumstances go to the Classes tab
+          and look under Monk and Barbarian. Furthermore, intiative is a roll soley based on Dex as well. Intiative is used to determine turn order during 
+          battle. This number is equal to your Dex modifier. So the higher your Dex the more likely you will get to go first in combat. Not only that, but Dex 
+          can also be used to dodge, climb,  and parkour. For example, if you want to jump off a high structure you would role Dex to see how well you land.
+        </p>
+        <div class="tables">
+          <table>
+            <tr>
+              <th>Armor Type</th>
+              <th>AC Calculation</th>
+            </tr>
+            <tr>
+              <td>Padded</td>
+              <td>11+Dex modifier</td>
+            </tr>
+            <tr>
+              <td>Leather</td>
+              <td>11+Dex modifier</td>
+            </tr>
+            <tr>
+              <td>Studded Leather</td>
+              <td>12+Dex modifier</td>
+            </tr>
+            <tr>
+              <td>Hide</td>
+              <td>12+Dex modifier (max of +2)</td>
+            </tr>
+            <tr>
+              <td>Chain Shirt</td>
+              <td>13+Dex modifier (max of +2)</td>
+            </tr>
+            <tr>
+              <td>Scale Mail</td>
+              <td>14+Dex modifier (max of +2)</td>
+            </tr>
+            <tr>
+              <td>Breastplate</td>
+              <td>14+Dex modifier (max of +2)</td>
+            </tr>
+            <tr>
+              <td>Half Plate</td>
+              <td>15+Dex modifier (max of +2)</td>
+            </tr>
+            <tr>
+              <td>Ring Mail</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Chain Mail</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Splint</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Plate</td>
+              <td>18</td>
+            </tr>
+          </table>
+        </div>
+        <div class="interactive">
+          <label for="ac">Dex Score:</label>
+          <input id="ac" name="ac" type="number" min="1" max="20" onchange="armorClass();">
+          <label for="armor_type">Armor:</label>
+            <select id="armor_type" name="armor_type" onchange="armorClass();">
+              <option value="">-- pick one --</option>
+              <option value="none">No Armor</option>
+              <option value="padded">Padded</option>
+              <option value="leather">Leather</option>
+              <option value="studLeather">Studded Leather</option>
+              <option value="hide">Hide</option>
+              <option value="chainShirt">Chain Shirt</option>
+              <option value="scaleMail">Scale Mail</option>
+              <option value="breastplate">Breastplate</option>
+              <option value="halfPlate">Half Plate</option>
+              <option value="ringMail">Ring Mail</option>
+              <option value="chainMail">Chain Mail</option>
+              <option value="splint">Splint</option>
+              <option value="plate">Plate</option>
+            </select>
+          <div>
+            AC: <span id="acNum">&nbsp;</span>
+          </div>
+        </div>
+        <h3 class="section">Constitution (Con)</h3>
+        <p class="description">
+          Con refers to your character's endurance. This stat only effects a character's health and a few class abilities. It is the only 
+		  stat in the game that doesn't have any abilities linked to it. Con rolls will only be used to protect against things like poison and pain. It's basicaly
+          a measure of your character's well-being. To calculate your characters health will depend on both your class and your con stat. 
+		  Therefore, I will be going over that aspect of the game in the classes tab.
+        </p>
+        <h3 class="section">Intelligence (Int)</h3>
+        <p class="description">
+          Int is another self explainatory stat. This stat pertains to how knowledgable your character is. It is basically book smarts
+          in a nutshell. It can also effect spell effectiveness depending on which class you choose, more on that in the classes tab. 
+		  Int will mainly be used to remember history, learn about a spell, and to look for clues.
+        </p>
+        <h3 class="section">Wisdom (Wis)</h3>
+        <p class="description">
+          Just like Int is book smarts, Wis is street smarts. It portrays how good your character is at figuring things out. How to basically
+          notice and sus things out. This stat will be used to tell if someone is lying, sus something out that others might not notice, and
+          even to treat wounds.
+        </p>
+        <h3 class="section">Charisma (Cha)</h3>
+        <p class="description">
+          Finaly, Cha is how presentable you make yourself out to be. It's your power to sway or coerce people to your side of an argument.
+          The stat is used for scaring, lying, convincing, and entertaining players and npcs alike. It's how well you can put up a facade,
+          or bullshit your way out of a situation, or even sing for an audience.
+        </p>
+		<h3 class="section">Applying Stat Values</h3>
+		<p class="description">
+			So now that we understand what each stat does how do we give values to these stats. Obviously you can't just give each stat 
+			whatever value you want or else you could break the game. In turn, there are 3 allocation methods that the game provides. There
+			is standard array, point-buy, and rolled. Below I go into each method in depth.
+		</p>
+		<h3 class="section">Standard Array</h3>
+		<p class="description">
+			Standard array gives you 6 values for each stat. These values are static, which basically means when you create a character these
+			are the values you get. You can only use each value once, so once you assaign it to a stat you can't assign the same number to a
+			different stat. So then what are these static numbers? The values are as follows: 15, 14, 13, 12, 10, and 8. This means you will 
+			always get two +2's, two +1s, a +0, and a -1. Below is an example on how to use standard array.
+		</p>
+		<div class="interactive">
+        <div class=statType>
+          <div>
+			<label for="str1">Strength:</label>
+			<select class="sa" id="str1" name="str1" onchange="standardArray();">
+				<option value="">-- pick one --</option>
+				<option value="15">15</option>
+				<option value="14">14</option>
+				<option value="13">13</option>
+				<option value="12">12</option>
+				<option value="10">10</option>
+				<option value="8">8</option>
+			</select>
+			Mod: <span id="strMod1">&nbsp;</span>
+		  </div>
+		  <div>
+			<label for="dex1">Dexterity:</label>
+			<select class="sa" id="dex1" name="dex1" onchange="standardArray();">
+				<option value="">-- pick one --</option>
+				<option value="15">15</option>
+				<option value="14">14</option>
+				<option value="13">13</option>
+				<option value="12">12</option>
+				<option value="10">10</option>
+				<option value="8">8</option>
+			</select>
+			Mod: <span id="dexMod1">&nbsp;</span>
+		  </div>
+		  <div>
+			<label for="con1">Constitution:</label>
+			<select class="sa" id="con1" name="con1" onchange="standardArray();">
+				<option value="">-- pick one --</option>
+				<option value="15">15</option>
+				<option value="14">14</option>
+				<option value="13">13</option>
+				<option value="12">12</option>
+				<option value="10">10</option>
+				<option value="8">8</option>
+			</select>
+			Mod: <span id="conMod1">&nbsp;</span>
+		  </div>
+		  <div>
+			<label for="int1">Intelligence:</label>
+			<select class="sa" id="int1" name="int1" onchange="standardArray();">
+				<option value="">-- pick one --</option>
+				<option value="15">15</option>
+				<option value="14">14</option>
+				<option value="13">13</option>
+				<option value="12">12</option>
+				<option value="10">10</option>
+				<option value="8">8</option>
+			</select>
+			Mod: <span id="intMod1">&nbsp;</span>
+		  </div>
+		  <div>
+			<label for="wis1">Wisdom:</label>
+			<select class="sa" id="wis1" name="wis1" onchange="standardArray();">
+				<option value="">-- pick one --</option>
+				<option value="15">15</option>
+				<option value="14">14</option>
+				<option value="13">13</option>
+				<option value="12">12</option>
+				<option value="10">10</option>
+				<option value="8">8</option>
+			</select>
+			Mod: <span id="wisMod1">&nbsp;</span>
+		  </div>
+		  <div>
+			<label for="cha1">Charisma:</label>
+			<select class="sa" id="cha1" name="cha1" onchange="standardArray();">
+				<option value="">-- pick one --</option>
+				<option value="15">15</option>
+				<option value="14">14</option>
+				<option value="13">13</option>
+				<option value="12">12</option>
+				<option value="10">10</option>
+				<option value="8">8</option>
+			</select>
+			Mod: <span id="chaMod1">&nbsp;</span>
+		  </div>
+        </div>
+      </div>
+	  <h3 class="section">Point-buy</h3>
+	  <p class="description">
+		Point-buy is an allocation method that allows you add points to specific stats. The way this works is that each stat value starts
+		at 8. You then have a total of 27 points you can add to different stats. There are limitations to this assignment method. You have
+		a maximum and a minimum number your stats can be. So, your stat cannot go over 15 or go below 8. Furthermore, it takes an extra point
+		to get to 14 and 15. This means you will have to spend 2 points in order to make your stats higher than a 13. This then brings the
+		max amount of points you can spend to 9 and a min of 0.
+	  </p>
+	  <div class="interactive">
+        <div class=statType>
+			<div id="totalPoints">
+				<h3><span id="points_left">27</span>/27</h3>
+			</div>
+          <div>
+			<label>Strength:</label>
+			<input type="button" value="-" onclick="addPointbuy(-1);">
+			<label id="str2">8</label>
+			<input type="button" value="+" onclick="addPointbuy(1);">
+			Mod: <span id="strMod2">-1</span>
+		  </div>
+		  <div>
+			<label>Dexterity:</label>
+			<input type="button" value="-" onclick="addPointbuy(-2);">
+			<label id="dex2">8</label>
+			<input type="button" value="+" onclick="addPointbuy(2);">
+			Mod: <span id="dexMod2">-1</span>
+		  </div>
+		  <div>
+			<label>Constitution:</label>
+			<input type="button" value="-" onclick="addPointbuy(-3);">
+			<label id="con2">8</label>
+			<input type="button" value="+" onclick="addPointbuy(3);">
+			Mod: <span id="conMod2">-1</span>
+		  </div>
+		  <div>
+			<label>Intelligence:</label>
+			<input type="button" value="-" onclick="addPointbuy(-4);">
+			<label id="int2">8</label>
+			<input type="button" value="+" onclick="addPointbuy(4);">
+			Mod: <span id="intMod2">-1</span>
+		  </div>
+		  <div>
+			<label>Wisdom:</label>
+			<input type="button" value="-" onclick="addPointbuy(-5);">
+			<label id="wis2">8</label>
+			<input type="button" value="+" onclick="addPointbuy(5);">
+			Mod: <span id="wisMod2">-1</span>
+		  </div>
+		  <div>
+			<label>Charisma:</label>
+			<input type="button" value="-" onclick="addPointbuy(-6);">
+			<label id="cha2">8</label>
+			<input type="button" value="+" onclick="addPointbuy(6);">
+			Mod: <span id="chaMod2">-1</span>
+		  </div>
+        </div>
+      </div>
+	  <h3 class="section">Rolled</h3>
+	  <p class="description">
+		Rolled stats are exactly as they sound. They are stats that you have to roll to aquire. Now there are multiple homebrew rules for 
+		leaving it less up to chance. More on that in the hombrew tab. Anyway, the way rolled stats works are as follows. First you need 4
+		d6s. You will roll these all at the same time. Then, when all 4 are rolled, take the lowest number you rolled and put it aside. Then
+		add the other 3. This total will be the stat value you can assaign. You will do this 6 times for all 6 stats. Once all of your stats
+		are rolled you can then put them into your desired stat.
+	  </p>
+	  <div class="interactive">
+          <div class="buttons">
+            <button onclick="rollStats();">Roll 4d6</button>
+          </div>
+          <div class="modChange">
+            <div>
+              Roll 1: <span id="roll1">&nbsp;</span>
+            </div>
+            <div>
+              Roll 2: <span id="roll2">&nbsp;</span>
+            </div>
+            <div>
+              Roll 3: <span id="roll3">&nbsp;</span>
+            </div>
+            <div>
+              Roll 4: <span id="roll4">&nbsp;</span>
+            </div>
+			<div>
+				Stat Value: <span id="rolledStat">&nbsp;</span> Mod: <span id="rolledMod">&nbsp;</span>
+			</div>
+          </div>
+        </div>
+      <div class="contact_info">
+        <div>Author: Will Meagher</div>
+        <div>Image Referances:</div>
+        <ul>
+          <li><a href="https://www.lifepng.com/photo/3268/smoke-png-hd-5/">Logo Image</a></li>
+          <li><a href="https://packagingeurope.com/ampacet-reveals-halogen-free-flame-retardant-masterbatches/4317.article">Background Image</a></li>
+          <li><a href="https://www.dmsguild.com/product/346571/A5-Character-Sheet-DD-5e?filters=0_45507_0_0_0_0_0_0">Stats Image</a></li>
+          <li><a href="https://www.redbubble.com/i/ipad-case/OH-NO-D20-Nat-1-uncolored-version-by-AceLlama/51349160.MNKGF">Abilities Image</a></li>
+          <li><a href="https://www.savingthrowshow.com/shows/">Saving Throws Image</a></li>
+          <li><a href="https://www.istockphoto.com/illustrations/silver-knight-armor">Proficiency Image</a></li>
+          <li><a href="https://www.polygon.com/22889546/dnd-monsters-of-the-multiverse-pc-races-full-list">Races Image</a></li>
+          <li><a href="https://www.redbubble.com/i/postcard/Kawaii-DnD-Classes-DnD-Dungeons-and-Dragons-DandD-by-Glassstaff/40922025.V7PMD">Classes Image</a></li>
+          <li><a href="https://www.gamersdecide.com/articles/dnd-best-bonus-action-spells">Spell Image</a></li>
+          <li><a href="https://arcaneeye.com/mechanic-overview/5e-conditions/">Conditions Image</a></li>
+          <li><a href="https://cdn.discordapp.com/attachments/888124158905548912/971264206487842836/orb.png">Homebrew Image</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>

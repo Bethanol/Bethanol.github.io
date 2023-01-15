@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D&D Start-up Guide</title>
+    <link href="final.css?version=100" rel=stylesheet type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" name="author" content="Will Meagher">
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="logo">
+          <img src="d&d_logo.png" alt="D&D Start-up Guide Logo">
+          <div>Start-up Guide</div>
+        </div>
+        <div class="navbar">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="stats.html">Base Stats</a></div>
+          <div><a href="ability.html">Abilities</a></div>
+          <div><a href="sThrows.html">Saving Throws</a></div>
+          <div><a href="proficiency.html">Proficiency</a></div>
+          <div><a href="race.html">Races</a></div>
+          <div><a href="class.html">Classes</a></div>
+          <div><a href="spells.html">Spellcasting</a></div>
+          <div><a href="condition.html">Conditions</a></div>
+          <div><a href="homebrew.html">Homebrew</a></div>
+        </div>
+       </div>
+      <div class="mainImg">
+        <img src="sword_shield.jpg" alt="2 Swords Intersecting In a Shield">
+      </div>
+      <div class="pageName">
+        <h1>Proficiencies</h1>
+      </div>
+      <div class="general">
+        <h3 class="section">Proficiencies and There Uses</h3>
+        <p class="description">
+          Proficiency is one of the most important aspects of D&D. Proficiency will add a proficiency bonus to the ability, attack roll, spell
+          save, and/or tool kit you are proficient in. This proficiency bonus will be added to your current modifier that the item, ability, or
+          saving throw already requires. For character creation you are allowed to choose ability and tool proficiencies. However,
+          weapon, spell casting, and saving throw proficiencies are decided by your class, see the classes tab for more information. Additionally, 
+		  your proficiency bonus changes as your
+          character levels up. Not to mention there are other proficiency bonuses that you can aquire. For this section we will look at all the
+          types of proficiency bonuses as well as all the other bonuses.
+        </p>
+      </div>
+      <div class="site_info">
+        <h3 class="section">Proficiency as a Whole</h3>
+        <p class="description">
+          As said above proficiency will add an extra buff to the things you are proficient in. Your proficiency bonus is the same for every
+          class. It just changes as you level up throughout the game. At level 1 it starts at a +2, and as it goes up to the max level, level 20,
+          you will eventually gain a proficiency bonus of +6. The table and example below will explain how proficiency bonuses work with modifiers. Now keep
+          in mind that your ability, saving throw, and attack roll modifiers are all just your base stats reprinted without proficiency.
+        </p>
+        <div class="tables">
+          <table>
+            <tr>
+              <th>Player Level</th>
+              <th>Proficiency Bonus</th>
+            </tr>
+            <tr>
+              <td>1-4</td>
+              <td>+2</td>
+            </tr>
+            <tr>
+              <td>5-8</td>
+              <td>+3</td>
+            </tr>
+            <tr>
+              <td>9-12</td>
+              <td>+4</td>
+            </tr>
+            <tr>
+              <td>13-16</td>
+              <td>+5</td>
+            </tr>
+            <tr>
+              <td>17-20</td>
+              <td>+6</td>
+            </tr>
+          </table>
+        </div>
+        <div class="interactive">
+          <div class=statType>
+            <label for="level_1">Level:</label>
+            <select id="level_1" name="level_1" onchange="proficiency();">
+              <option value="">-- pick one --</option>
+              <option value="1-4">1-4</option>
+              <option value="5-8">5-8</option>
+              <option value="9-12">9-12</option>
+              <option value="13-16">13-16</option>
+              <option value="17-20">17-20</option>
+            </select>
+          </div>
+          <div class="statNum">
+            <label for="modNum1">Stat Number:</label>
+            <input id="modNum1" name="modNum1" type="number" min="1" max="20" onchange="proficiency();">
+          </div>
+          <div class="modChange">
+            Modifier With Proficiency: <span id="reg_prof">&nbsp;</span>
+          </div>
+        </div>
+        <h3 class="section">Ability Proficiencies</h3>
+        <p class="description">
+          These proficiencies add your proficiency bonus to your ability modifiers. This means depending on what stat the ability is based
+		  off you will add the stat's mod to your proficiency mod. So for example, if you are proficient in stealth you would add your Dex modifier,
+		  the stat the ability is influenced by, to your proficiency modifier. This is also one of the few proficiencies you can willingly choose to
+		  give to your character. This will of course buff your character's modifiers and make them more likely to succeed in the abilities you are		  
+		  proficient in. Therefore, the strategy for these proficiencies is to give your proficiency bonus to the abilities that rely on your higher
+		  stats.
+        </p>
+        <h3 class="section">Tool Proficiencies</h3>
+        <p class="description">
+          This is also one of the few proficiencies you can willingly choose during character creation. These tools can be some of the best and
+          worst items in the game depending on your dm. There are so many tool kits to be proficient in. From the lute to the thieves tools,
+		  these tools can help immensaly or be entirely useless. What you can do with these tools all depends on the tools and your imagination.
+		  For example, thieves tools are good for breaking into places and picking locks, while an herbalism kit might be used for creating health
+		  potions or poisons. When you get to use these tools your dm will ask you to roll a specific stat that they believe matches what you're
+		  trying to do. If your proficient with these tools you'll get your proficiency bonus along with this roll.
+        </p>
+        <h3 class="section">Weapon Proficiencies</h3>
+        <p class="description">
+          Now this is one of the proficiencies that gets decided based on what class you play. Different classes will use different weapons.
+          Granted that doesn't mean you can't try and use a weapon you're not proficient in, you just will have a harder time hitting what
+          you want to hit. Each class has a very different fighting style. In turn they need different weapons to match how they're played.
+          As said before, attack rolls are based on what weapon you use and if you are proficient in said weapon. Most martial weapons, like
+          axes and hammers, are strength based. This means there attack modifiers are calculated by adding your strength modifier to your 
+          proficiency modifier if you are proficient in these weapons. All other weapons are used with dexterity, like bows and daggers. You
+          will use your Dex modifier and your proficieny modifier, if you are proficient, to calculate these attack roles.
+        </p>
+        <div class="interactive">
+          <div class=statType>
+            <label for="level_4">Level:</label>
+            <select id="level_4" name="level_4" onchange="attackRoll();">
+              <option value="">-- pick one --</option>
+              <option value="1-4">1-4</option>
+              <option value="5-8">5-8</option>
+              <option value="9-12">9-12</option>
+              <option value="13-16">13-16</option>
+              <option value="17-20">17-20</option>
+            </select>
+          </div>
+          <div class="statNum">
+            <label for="modNum4">Str or Dex:</label>
+            <input id="modNum4" name="modNum4" type="number" min="1" max="20" onchange="attackRoll();">
+          </div>
+          <div class="modChange">
+            Attack Roll: <span id="attack_roll">&nbsp;</span>
+          </div>
+        </div>
+        <h3 class="section">Spell Proficiencies</h3>
+        <p class="description">
+          Spell proficiencies are actually the same as weapon proficiencies just they're used for magic casters. Now if you know a spell you
+          will always use your proficiency bonus with that spell. Now how you use it will depend on what spell you are casting. If the spell
+          is a roll to hit spell you will add your spell casting stat modifier, which varies from caster to caster, to your proficiency bonus, 
+		  just like other attack rolls discussed above.
+          If you are casting a spell that requires an enemy to make a saving throw you calculate the roll they need to get by adding 8 + your
+          spellcasting stat modifier + your proficiency bonus, as shown below.
+        </p>
+        <div class="interactive">
+          <div class=statType>
+            <label for="level_2">Level:</label>
+            <select id="level_2" name="level_2" onchange="spellSave();">
+              <option value="">-- pick one --</option>
+              <option value="1-4">1-4</option>
+              <option value="5-8">5-8</option>
+              <option value="9-12">9-12</option>
+              <option value="13-16">13-16</option>
+              <option value="17-20">17-20</option>
+            </select>
+          </div>
+          <div class="statNum">
+            <label for="modNum2">Spellcasting Stat Number:</label>
+            <input id="modNum2" name="modNum2" type="number" min="1" max="20" onchange="spellSave();">
+          </div>
+          <div class="modChange">
+            Spell Save: <span id="spell_save">&nbsp;</span>
+          </div>
+        </div>
+        <h3 class="section">Saving Throw Proficiencies</h3>
+        <p class="description">
+          Now suprise, this is another proficiency you don't get to willingly choose. As always it will depend on what class you choose to play.
+          These proficiencies will be added by the stats your class focuses on. For example, if you play as a bard your save proficiencies will
+          be in Dex and Cha, while if you play a monk your saves will be proficient in Str and Dex. However the class is meant to be played you
+          will have to take those proficiencies. To calculate saving throws with proficiency works exactly the same way as ability proficiency.
+		  All that is required is adding together your proficiency mod to the mod the saving throw is based on.
+        </p>
+        <h3 class="section">Armor Proficiencies</h3>
+        <p class="description">
+          Armor proficiency is what armor you work best in. This is also an aspect that will influence AC. For a description on AC and how to
+          calculate it go to the Base Stats page and look under the Dexterity section. This is another proficiency that depends on the class that 
+          you have chosen to play. Now just like weapons you can choose whatever armor you want to wear. However, you are going to get mad 
+          disadvantages if you don't wear the armor you are proficient with. Now when I say disadvantages I mean it as an actual rule of the game. 
+          Disadvantage is a rule of the game that will require you to roll 2 d20s and take the lower roll. Now there is also a rule called advantage. This 
+          works the same as disadvantage except you will take the higher of the 2 rolls. Moving on, armor proficiency works a bit different than 
+          the other proficiencies. This is the one proficiency you don't add your proficiency bonus to. The way you treat this is only if you are 
+          wearing armor you aren't proficient in. As I said before if you are wearing armor you aren't proficient in you will get disadvantage on
+          a lot of your ability checks. If you are proficient then you won't get any of these disadvantages. The only exception is that medium and heavy
+		  armors always have disadvantage to stealth, no matter what.
+        </p>
+        <h3 class="section">Other Proficiency Bonuses</h3>
+        <p class="description">
+          There are 3 other proficiency bonuses in this game. Twice proficiency, expertise, and half-proficiency. Each one has its own respective
+          bonus. Furthermore, these bonuses will only adhere to abilities. To start off, twice proficiency is a very situational proficiency bonus.
+          If you're making a stat roll and a very specific situation occurs you get to double your proficiency bonus on that related check. Expertise
+          is basically the same thing, but it isn't situational. If you have expertise any time you roll that specific ability check you get to add
+          double your proficiency mod. Lastly, half-proficiency is when you get to add half of your proficiency bonus to an ability check. All 3
+          bonuses are exemplified below.
+        </p>
+        <div class="interactive">
+          <div class=statType>
+            <label for="level_3">Level:</label>
+            <select id="level_3" name="level_3">
+              <option value="">-- pick one --</option>
+              <option value="1-4">1-4</option>
+              <option value="5-8">5-8</option>
+              <option value="9-12">9-12</option>
+              <option value="13-16">13-16</option>
+              <option value="17-20">17-20</option>
+            </select>
+          </div>
+          <div class="statNum">
+            <label for="modNum3">Ability Reliant Stat Number:</label>
+            <input id="modNum3" name="modNum3" type="number" min="1" max="20">
+          </div>
+          <div class="buttons">
+            <button onclick="diffProfs(1);">Twice Proficiency</button>
+            <button onclick="diffProfs(2);">Expertise</button>
+            <button onclick="diffProfs(3);">Half-proficiency</button>
+          </div>
+          <div class="modChange">
+            Final Ability Modifier: <span id="otherProfs">&nbsp;</span>
+          </div>
+        </div>
+      <div class="contact_info">
+        <div>Author: Will Meagher</div>
+        <div>Image Referances:</div>
+        <ul>
+          <li><a href="https://www.lifepng.com/photo/3268/smoke-png-hd-5/">Logo Image</a></li>
+          <li><a href="https://packagingeurope.com/ampacet-reveals-halogen-free-flame-retardant-masterbatches/4317.article">Background Image</a></li>
+          <li><a href="https://www.dmsguild.com/product/346571/A5-Character-Sheet-DD-5e?filters=0_45507_0_0_0_0_0_0">Stats Image</a></li>
+          <li><a href="https://www.redbubble.com/i/ipad-case/OH-NO-D20-Nat-1-uncolored-version-by-AceLlama/51349160.MNKGF">Abilities Image</a></li>
+          <li><a href="https://www.savingthrowshow.com/shows/">Saving Throws Image</a></li>
+          <li><a href="https://www.istockphoto.com/illustrations/silver-knight-armor">Proficiency Image</a></li>
+          <li><a href="https://www.polygon.com/22889546/dnd-monsters-of-the-multiverse-pc-races-full-list">Races Image</a></li>
+          <li><a href="https://www.redbubble.com/i/postcard/Kawaii-DnD-Classes-DnD-Dungeons-and-Dragons-DandD-by-Glassstaff/40922025.V7PMD">Classes Image</a></li>
+          <li><a href="https://www.gamersdecide.com/articles/dnd-best-bonus-action-spells">Spell Image</a></li>
+          <li><a href="https://arcaneeye.com/mechanic-overview/5e-conditions/">Conditions Image</a></li>
+          <li><a href="https://cdn.discordapp.com/attachments/888124158905548912/971264206487842836/orb.png">Homebrew Image</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>

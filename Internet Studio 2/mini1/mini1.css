@@ -1,0 +1,50 @@
+html {
+	font-family: 'Manrope', sans-serif;
+	width:100%;
+  background-color: #4d84b8;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  color: black;
+  width: 75%;
+  margin: 0 auto;
+}
+h2{
+	display: flex;
+  justify-content: center;
+  background-color: #4a3c3b;
+  color: white;
+  border-radius: 0.4em;
+}
+p {
+	/*font-family: Georgia;*/
+}
+h3,p, li{
+	/*width: 94%;
+	margin: 0 auto;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-bottom: 0px;
+		margin-left: 145px;*/
+	max-width: 50em;
+	/*padding-right: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;*/
+}
+#headshot{
+	display: flex;
+	justify-content: center;
+}
+#headshot > img {
+	min-width: 5em;
+	max-width: 30em;
+}
+.border{
+  background-color: white;
+  padding: 0.4em;
+  border: 1px solid #000000;
+	border-radius: 15px;
+	font-family: arial;
+}

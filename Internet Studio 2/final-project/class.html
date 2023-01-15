@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D&D Start-up Guide</title>
+    <link href="final.css?version=100" rel=stylesheet type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" name="author" content="Will Meagher">
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="logo">
+          <img src="d&d_logo.png" alt="D&D Start-up Guide Logo">
+          <div>Start-up Guide</div>
+        </div>
+        <div class="navbar">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="stats.html">Base Stats</a></div>
+          <div><a href="ability.html">Abilities</a></div>
+          <div><a href="sThrows.html">Saving Throws</a></div>
+          <div><a href="proficiency.html">Proficiency</a></div>
+          <div><a href="race.html">Races</a></div>
+          <div><a href="class.html">Classes</a></div>
+          <div><a href="spells.html">Spellcasting</a></div>
+          <div><a href="condition.html">Conditions</a></div>
+          <div><a href="homebrew.html">Homebrew</a></div>
+        </div>
+       </div>
+      <div class="mainImg">
+        <img src="class.jpg" alt="Many Dice Dressed up as the Many Classes of D&D">
+      </div>
+      <div class="pageName">
+        <h1>Classes</h1>
+      </div>
+      <div class="general">
+        <div class="general">
+        <h3 class="section">The Classes of D&D</h3>
+        <p class="description">
+          Before we get to the intricate terrain of classes I need to explain how combat works. Each player will get 2 things to do on their turn:
+          actions and bonus actions. Actions tend to be things like attack or cast a spell. There are a number of things you can use your action
+          for however. You can use your action to basicly do whatever you want on your turn. You can interact with an object, prepare an attack for
+          when something specific happens, grapple to try and restrain an enemy, etc. However, it is up to your DM in how successfull you are in 
+          these actions. Now bonus actions are just actions that your character can do on the same turn. Some spells count as bonus actions, so you
+          cast those spells and then use your action for something else. These bonus actions are special to what class you pick. Additionally, when it isn't your
+          turn you can use an action called a reaction. These are again things specific to classes. The one reaction that isn't specific to class is
+          oppurtunity attack. This means when it isn't your turn and an enemy leaves your range of attack you can attack them as they try to run. You
+          can only use reactions once per your turn. This means that you have to wait your next turn until you can use your reaction again. Now that 
+          we have gotten through so many of the mathematecal aspects of D&D, let's jump in to the most fun part of character creation. Choosing a class. 
+          In total there are 14 classes in the game. Each has their own set of aspects at each level. I will be focusing only on the classes in the 
+          players handbook. Therefore, I will only be going over the 12 classes that appear in this source book. This is because these are the classes 
+          you will gauranteed get to play. Every other class is up to DM discretion. I will be only going over the basic framework of these classes. I
+			do not wish to scare the new players with overwhelming terminology.
+          This will include their most used class aspect, where they get their power from, and what stats they best work with. Now if you do wish to look at the other classes
+          that I did not mention on this page, you can click this link here(<a href="https://www.dndbeyond.com/classes">all player classes</a>) and peruse 
+          them as you wish.
+        </p>
+      </div>
+      <div class="interactive">
+          <div class=statType>
+              <label for="classPicker">Race:</label>
+              <select id="classPicker" name="classPicker" onchange="cDetailGenerator();">
+                  <option value="">-- pick one --</option>
+                  <option value="barbarian">Barbarian</option>
+                  <option value="bard">Bard</option>
+                  <option value="cleric">Cleric</option>
+                  <option value="druid">Druid</option>
+                  <option value="fighter">Fighter</option>
+                  <option value="monk">Monk</option>
+                  <option value="paladin">Paladin</option>
+                  <option value="ranger">Ranger</option>
+                  <option value="rogue">Rogue</option>
+                  <option value="sorcerer">Sorcerer</option>
+                  <option value="warlock">Warlock</option>
+                  <option value="wizard">Wizard</option>
+              </select>
+          </div>
+      </div>
+      <div class="site_info">
+          <h3 id="classChosen"class="section">&nbsp;</h3>
+          <p id="classDetails"class="description">&nbsp;</p>
+      </div>
+      <div class="contact_info">
+        <div>Author: Will Meagher</div>
+        <div>Image Referances:</div>
+        <ul>
+          <li><a href="https://www.lifepng.com/photo/3268/smoke-png-hd-5/">Logo Image</a></li>
+          <li><a href="https://packagingeurope.com/ampacet-reveals-halogen-free-flame-retardant-masterbatches/4317.article">Background Image</a></li>
+          <li><a href="https://www.dmsguild.com/product/346571/A5-Character-Sheet-DD-5e?filters=0_45507_0_0_0_0_0_0">Stats Image</a></li>
+          <li><a href="https://www.redbubble.com/i/ipad-case/OH-NO-D20-Nat-1-uncolored-version-by-AceLlama/51349160.MNKGF">Abilities Image</a></li>
+          <li><a href="https://www.savingthrowshow.com/shows/">Saving Throws Image</a></li>
+          <li><a href="https://www.istockphoto.com/illustrations/silver-knight-armor">Proficiency Image</a></li>
+          <li><a href="https://www.polygon.com/22889546/dnd-monsters-of-the-multiverse-pc-races-full-list">Races Image</a></li>
+          <li><a href="https://www.redbubble.com/i/postcard/Kawaii-DnD-Classes-DnD-Dungeons-and-Dragons-DandD-by-Glassstaff/40922025.V7PMD">Classes Image</a></li>
+          <li><a href="https://www.gamersdecide.com/articles/dnd-best-bonus-action-spells">Spell Image</a></li>
+          <li><a href="https://arcaneeye.com/mechanic-overview/5e-conditions/">Conditions Image</a></li>
+          <li><a href="https://cdn.discordapp.com/attachments/888124158905548912/971264206487842836/orb.png">Homebrew Image</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>
