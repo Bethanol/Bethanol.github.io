@@ -2,7 +2,8 @@ let jackverse=["Agurha", "Danos", "Klif", "Tokay", "Shaymus", "Kyan", "Alder", "
 "Roe (The Finger)", "Axel", "Billiam Bimberton", "Anisha", "Old Man McBumbersnazzle", "Adytum", "Val Coda", "Zoo",
 "Monty (Jed)", "Pandora", "Maira", "Hux", "Baron", "Hazel", "Gretchen", "Ponten", "Lubba", "Makostra", "Cyprus",
 "Dantean", "DarkNight GrimReaper", "Gonka", "Anya", "Kuruk", "Minerva", "The Chimp", "Helix", "R.Qi.M.", "Darius",
-"Steelix", "Flammen", "Kei", "Void Bear", "Syd Domino", "Polari Ray", "Loxia Leto", "Brock Jaxter", "Gantu"];
+"Steelix", "Flammen", "Kei", "Void Bear", "Syd Domino", "Polari Ray", "Loxia Leto", "Brock Jaxter", "Gantu", 
+"Ball Baron", "Brian Griffin Hux"];
 let lucverse=["CC", "Dular", "Pitticus Lore", "Zichu", "Franklin", "Delilah", "Amethyst", "Dr. Prof. Harbin Wessen",
 "Rad", "Delta Speckles", "Henry", "Luis", "Private Aye", "Chaves", "Cisco", "Luna", "DarkNight", "Evelyn", "Glim",
 "Pierre", "Detective Bryan", "Miriella", "Abe Stone", "Lawrence", "Rob STUFF Northsward", "Ringo Starr", "Micky",
@@ -10,7 +11,9 @@ let lucverse=["CC", "Dular", "Pitticus Lore", "Zichu", "Franklin", "Delilah", "A
 "Madame Sigma", "Minecroft Holmes", "Maki-e (The Tempest)", "Uri Nary (Sydney Sleeper)",
 "Garmr (The Phantom Protector Ghost)", "Luther", "Magnus", "Cornelius Beutfauq", "Dick Wolf", "Twitchy Squirrel",
 "The Pissant", "Lavinia Henwick", "Father Caarvenis", "Sir Grunty", "Iver Adalfarus", "Hirye", "Bracket", 
-"Feet Footfungus", "Erina Pentaghast", "Geoffrey Jackalope", "Declann Dahl", "Chopper D. Octering", "Mockinplier"];
+"Feet Footfungus", "Erina Pentaghast", "Geoffrey Jackalope", "Declann Dahl", "Chopper D. Octering", "Mockinplier",
+"Lucy Pegg", "Mittens", "Dr. Walden", "Kim Weller", "P.T. Boomer", "Abraham Callistus", "Chaka Zunn", 
+"Dr. James Bloodgore", "Chalastry Ricadoon"];
 let entire=["Agurha", "Danos", "Klif", "Tokay", "Shaymus", "Kyan", "Alder", "Dirk", "Damien", "Ignis", "Luis",
 "Roe (The Finger)", "Axel", "Billiam Bimberton", "Anisha", "Old Man McBumbersnazzle", "Adytum", "Val Coda", "Zoo",
 "Monty (Jed)", "Pandora", "Maira", "Hux", "Baron", "Hazel", "Gretchen", "Ponten", "Lubba", "Makostra", "Cyprus",
@@ -23,7 +26,9 @@ let entire=["Agurha", "Danos", "Klif", "Tokay", "Shaymus", "Kyan", "Alder", "Dir
 "Garmr (The Phantom Protector Ghost)", "Luther", "Magnus", "Cornelius Beutfauq", "Dick Wolf", "Twitchy Squirrel",
 "Syd Domino", "Polari Ray", "Loxia Leto", "The Pissant", "Lavinia Henwick", "Father Caarvenis", "Sir Grunty",
 "Iver Adalfarus", "Hirye", "Brock Jaxter", "Bracket",  "Feet Footfungus", "Erina Pentaghast", "Geoffrey Jackalope", 
-"Declann Dahl", "Gantu", "Chopper D. Octering", "Mockinplier"];
+"Declann Dahl", "Gantu", "Chopper D. Octering", "Mockinplier", "Lucy Pegg", "Mittens", "Dr. Walden", "Kim Weller", 
+"P.T. Boomer", "Abraham Callistus", "Chaka Zunn", "Dr. James Bloodgore", "Chalastry Ricadoon", "Ball Baron", 
+"Brian Griffin Hux"];
 let shipText=document.getElementById('shippingText');
 function generateShip(){
 	let characterWorld=document.getElementsByClassName('characterWorld');
